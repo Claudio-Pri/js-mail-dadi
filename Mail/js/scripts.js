@@ -1,29 +1,27 @@
 
+//dichiarazione array
+const myList = ['ANNA', 'GIORGIO', 'ALESSANDRO', 'CLAUDIO', 'ALESSIO', 'MICHELE', 'GENNARINO'];
+console.log('Lista utenti', myList);
 
-document.writeln('Hello world');
-
-
-
-// fa uscire un pop-up che blocca l'esecuzione della pagina
-alert('Hello world!');
-
-
-
-//prende un elemento dal documento e lo trasforma--js è case sensitive
-document.getElementById('mio_id').innerHTML = 'Hello World 4!';
+//prompt utente trasformato in uppercase per facilitare le comparazione
+const myUserName = (prompt('Inserisci il tuo nome:').toUpperCase());
+console.log('Username:', myUserName);
 
 
 
-//come conservare un dato
-/* 
-variabili: contenitori con un nome e una proprietà/ dato
-i dati della variabile vengono eliminati alla fine dell'esecuzione 
-*/
 
-//Dichiarazione di una variabile
+for (i = 0; i < myList.length; i++) {
 
-const miaVariabile1 = 'ciao raghi';
-let miaVariabile2;
-var miaVariabile3;
+    // console.log('myList[i]', myList[i], typeof myList[i]);
+    if (myUserName == myList[i]) {
+        console.log('true');
+
+    }
+    else {
+        console.log('false');
+
+    }
 
 
+
+}
