@@ -1,27 +1,28 @@
 
-//dichiarazione array
+// Dichiarazione array
 const myList = ['ANNA', 'GIORGIO', 'ALESSANDRO', 'CLAUDIO', 'ALESSIO', 'MICHELE', 'GENNARINO'];
-console.log('Lista utenti', myList);
+console.log('Lista utenti:', myList);
 
-//prompt utente trasformato in uppercase per facilitare le comparazione
-const myUserName = (prompt('Inserisci il tuo nome:').toUpperCase());
+// Prompt utente trasformato in uppercase per facilitare la comparazione
+const myUserName = prompt('Inserisci il tuo nome:').toUpperCase();
 console.log('Username:', myUserName);
 
+let access = false;
 
-
-
-for (i = 0; i < myList.length; i++) {
-
+// Controllo se il nome utente è nella lista
+for (let i = 0; i < myList.length; i++) {
     // console.log('myList[i]', myList[i], typeof myList[i]);
-    if (myUserName == myList[i]) {
-        console.log('true');
+    if (myUserName === myList[i]) {
+        access = true;
 
     }
-    else {
-        console.log('false');
-
-    }
-
-
-
 }
+
+if (access) {
+    console.log('Access Granted');
+}
+
+else {
+    console.log('Access Denied');
+}
+
