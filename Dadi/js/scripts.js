@@ -1,29 +1,24 @@
 
+// Generazione di un numero casuale
 
-document.writeln('Hello world');
+let playerScore = Math.floor(Math.random() * 6) + 1;
+console.log("Punteggio Giocatore:", playerScore);
 
+let computerScore = Math.floor(Math.random() * 6) + 1;
+console.log("Punteggio Computer:", computerScore);
 
+// Determino il vincitore
 
-// fa uscire un pop-up che blocca l'esecuzione della pagina
-alert('Hello world!');
+let winner;
+if (playerScore > computerScore) {
+    winner = "Giocatore";
+} else if (computerScore > playerScore) {
+    winner = "Computer";
+} else {
+    winner = "Pareggio";
+}
 
+console.log("Vincitore:" + winner);
 
-
-//prende un elemento dal documento e lo trasforma--js è case sensitive
-document.getElementById('mio_id').innerHTML = 'Hello World 4!';
-
-
-
-//come conservare un dato
-/* 
-variabili: contenitori con un nome e una proprietà/ dato
-i dati della variabile vengono eliminati alla fine dell'esecuzione 
-*/
-
-//Dichiarazione di una variabile
-
-const miaVariabile1 = 'ciao raghi';
-let miaVariabile2;
-var miaVariabile3;
 
 
